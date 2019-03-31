@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="theme-color" content="#000000" />
+  <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+  <title>React App</title>
+
+  <!-- BEGIN GLOBAL MANDATORY STYLES -->
+  <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700&subset=all" rel="stylesheet" type="text/css" />
+  <link href="%PUBLIC_URL%/assets/global/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+  <link href="%PUBLIC_URL%/assets/global/plugins/simple-line-icons/simple-line-icons.min.css" rel="stylesheet" type="text/css" />
+  <link href="%PUBLIC_URL%/assets/global/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+  <link href="%PUBLIC_URL%/assets/global/plugins/uniform/css/uniform.default.css" rel="stylesheet" type="text/css" />
+  <link href="%PUBLIC_URL%/assets/global/plugins/bootstrap-switch/css/bootstrap-switch.min.css" rel="stylesheet" type="text/css" />
+  <!-- END GLOBAL MANDATORY STYLES -->
+  <!-- BEGIN PAGE LEVEL PLUGIN STYLES -->
+  <link href="%PUBLIC_URL%/assets/global/plugins/bootstrap-daterangepicker/daterangepicker-bs3.css" rel="stylesheet" type="text/css" />
+  <link href="%PUBLIC_URL%/assets/global/plugins/fullcalendar/fullcalendar.min.css" rel="stylesheet" type="text/css" />
+  <link href="%PUBLIC_URL%/assets/global/plugins/jqvmap/jqvmap/jqvmap.css" rel="stylesheet" type="text/css" />
+  <!-- END PAGE LEVEL PLUGIN STYLES -->
+  <!-- BEGIN PAGE STYLES -->
+  <link href="%PUBLIC_URL%/assets/admin/pages/css/tasks.css" rel="stylesheet" type="text/css" />
+  <!-- END PAGE STYLES -->
+  <!-- BEGIN THEME STYLES -->
+  <!-- DOC: To use 'rounded corners' style just load 'components-rounded.css' stylesheet instead of 'components.css' in the below style tag -->
+  <link href="%PUBLIC_URL%/assets/global/css/components-rounded.css" id="style_components" rel="stylesheet" type="text/css" />
+  <link href="%PUBLIC_URL%/assets/global/css/plugins.css" rel="stylesheet" type="text/css" />
+  <link href="%PUBLIC_URL%/assets/admin/layout4/css/layout.css" rel="stylesheet" type="text/css" />
+  <link href="%PUBLIC_URL%/assets/admin/layout4/css/themes/default.css" rel="stylesheet" type="text/css" id="style_color" />
+  <link href="%PUBLIC_URL%/assets/admin/layout4/css/custom.css" rel="stylesheet" type="text/css" />
+  <!-- END THEME STYLES -->
+  <link rel="shortcut icon" href="favicon.ico" />
+
+</head>
+
+<body classname="page-header-fixed page-sidebar-closed-hide-logo ppage-sidebar-closed-hide-logo">
+  <noscript>You need to enable JavaScript to run this app.</noscript>
+  <div id="root"></div>
+  <!-- BEGIN JAVASCRIPTS(Load javascripts at bottom, this will reduce page load time) -->
+	<!-- BEGIN CORE PLUGINS -->
+	<!--[if lt IE 9]>
+	<script src="%PUBLIC_URL%/assets/global/plugins/respond.min.js"></script>
+	<script src="%PUBLIC_URL%/assets/global/plugins/excanvas.min.js"></script> 
+	<![endif]-->
+	<script src="%PUBLIC_URL%/assets/global/plugins/jquery.min.js" type="text/javascript"></script>
+	<script src="%PUBLIC_URL%/assets/global/plugins/jquery-migrate.min.js" type="text/javascript"></script>
+	<!-- IMPORTANT! Load jquery-ui-1.10.3.custom.min.js before bootstrap.min.js to fix bootstrap tooltip conflict with jquery ui tooltip -->
+	<script src="%PUBLIC_URL%/assets/global/plugins/jquery-ui/jquery-ui-1.10.3.custom.min.js" type="text/javascript"></script>
+	<script src="%PUBLIC_URL%/assets/global/plugins/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+	<script src="%PUBLIC_URL%/assets/global/plugins/bootstrap-hover-dropdown/bootstrap-hover-dropdown.min.js"
+		type="text/javascript"></script>
+	<script src="%PUBLIC_URL%/assets/global/plugins/jquery-slimscroll/jquery.slimscroll.min.js"
+		type="text/javascript"></script>
+	<script src="%PUBLIC_URL%/assets/global/plugins/jquery.blockui.min.js" type="text/javascript"></script>
+	<script src="%PUBLIC_URL%/assets/global/plugins/jquery.cokie.min.js" type="text/javascript"></script>
+	<script src="%PUBLIC_URL%/assets/global/plugins/uniform/jquery.uniform.min.js" type="text/javascript"></script>
+	<script src="%PUBLIC_URL%/assets/global/plugins/bootstrap-switch/js/bootstrap-switch.min.js"
+		type="text/javascript"></script>
+	<!-- END CORE PLUGINS -->
+	<!-- BEGIN PAGE LEVEL PLUGINS -->
+	<script src="%PUBLIC_URL%/assets/global/plugins/jqvmap/jqvmap/jquery.vmap.js" type="text/javascript"></script>
+	<script src="%PUBLIC_URL%/assets/global/plugins/jqvmap/jqvmap/maps/jquery.vmap.russia.js" type="text/javascript"></script>
+	<script src="%PUBLIC_URL%/assets/global/plugins/jqvmap/jqvmap/maps/jquery.vmap.world.js" type="text/javascript"></script>
+	<script src="%PUBLIC_URL%/assets/global/plugins/jqvmap/jqvmap/maps/jquery.vmap.europe.js" type="text/javascript"></script>
+	<script src="%PUBLIC_URL%/assets/global/plugins/jqvmap/jqvmap/maps/jquery.vmap.germany.js" type="text/javascript"></script>
+	<script src="%PUBLIC_URL%/assets/global/plugins/jqvmap/jqvmap/maps/jquery.vmap.usa.js" type="text/javascript"></script>
+	<script src="%PUBLIC_URL%/assets/global/plugins/jqvmap/jqvmap/data/jquery.vmap.sampledata.js"
+		type="text/javascript"></script>
+	<!-- IMPORTANT! fullcalendar depends on jquery-ui-1.10.3.custom.min.js for drag & drop support -->
+	<script src="%PUBLIC_URL%/assets/global/plugins/morris/morris.min.js" type="text/javascript"></script>
+	<script src="%PUBLIC_URL%/assets/global/plugins/morris/raphael-min.js" type="text/javascript"></script>
+	<script src="%PUBLIC_URL%/assets/global/plugins/jquery.sparkline.min.js" type="text/javascript"></script>
+	<!-- END PAGE LEVEL PLUGINS -->
+	<!-- BEGIN PAGE LEVEL SCRIPTS -->
+	<script src="%PUBLIC_URL%/assets/global/scripts/metronic.js" type="text/javascript"></script>
+	<script src="%PUBLIC_URL%/assets/admin/layout4/scripts/layout.js" type="text/javascript"></script>
+	<script src="%PUBLIC_URL%/assets/admin/layout4/scripts/demo.js" type="text/javascript"></script>
+	<script src="%PUBLIC_URL%/assets/admin/pages/scripts/index3.js" type="text/javascript"></script>
+	<script src="%PUBLIC_URL%/assets/admin/pages/scripts/tasks.js" type="text/javascript"></script>
+	<!-- END PAGE LEVEL SCRIPTS -->
+	<script>
+		jQuery(document).ready(function () {
+			Metronic.init(); // init metronic core componets
+			Layout.init(); // init layout
+			Demo.init(); // init demo features 
+			Index.init(); // init index page
+			Tasks.initDashboardWidget(); // init tash dashboard widget  
+		});
+	</script>
+	<!-- javascript -->
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="plugin/tinymce/tinymce.min.js"></script>
+	<script type="text/javascript" src="plugin/tinymce/init-tinymce.js"></script>
+	<script type="text/javascript" src="js/getdata.js"></script>
+	<script src="%PUBLIC_URL%/js/validate.js" type="text/javascript"></script>
+	<script>
+		var image_tracker = 'orange';
+
+		function change() {
+			var image = document.getElementById('circle');
+			if (image_tracker == 'orange') {
+				image.src = 'images/goldStar.png';
+				image_tracker = 'blue';
+			}
+			else {
+				image.src = 'images/blackStar.png';
+				image_tracker = 'orange';
+			}
+		}
+
+	</script>
+	<!-- END JAVASCRIPTS -->
+</body>
+
+</html>
